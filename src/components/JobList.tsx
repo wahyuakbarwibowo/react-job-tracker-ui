@@ -33,20 +33,17 @@ export default function JobList({ jobs, onChange }: Props) {
           className="rounded-xl border bg-white p-4 shadow-sm transition hover:shadow"
         >
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            {/* Info */}
             <div>
               <p className="text-lg font-semibold">{job.company_name}</p>
               <p className="text-sm text-gray-600">{job.position}</p>
             </div>
 
-            {/* Actions */}
             <div className="flex items-center gap-3">
               <select
                 value={job.status}
                 onChange={(e) => updateStatus(job.ID, e.target.value)}
-                className={`rounded-lg border px-3 py-1 text-sm font-medium focus:outline-none ${
-                  statusStyle[job.status]
-                }`}
+                className={`rounded-lg border px-3 py-1 text-sm font-medium focus:outline-none ${statusStyle[job.status]
+                  }`}
               >
                 <option>Applied</option>
                 <option>Interview</option>

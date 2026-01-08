@@ -34,7 +34,6 @@ export default function JobForm({ onSuccess }: Props) {
       className="mb-6 rounded-xl border bg-white p-4 shadow-sm"
     >
       <div className="grid gap-4 md:grid-cols-4">
-        {/* Company */}
         <div className="md:col-span-2">
           <label className="mb-1 block text-sm font-medium text-gray-700">
             Company
@@ -48,7 +47,6 @@ export default function JobForm({ onSuccess }: Props) {
           />
         </div>
 
-        {/* Position */}
         <div className="md:col-span-1">
           <label className="mb-1 block text-sm font-medium text-gray-700">
             Position
@@ -62,7 +60,6 @@ export default function JobForm({ onSuccess }: Props) {
           />
         </div>
 
-        {/* Status */}
         <div className="md:col-span-1">
           <label className="mb-1 block text-sm font-medium text-gray-700">
             Status
@@ -80,7 +77,6 @@ export default function JobForm({ onSuccess }: Props) {
         </div>
       </div>
 
-      {/* Submit */}
       <div className="mt-4 flex justify-end">
         <button
           disabled={loading}

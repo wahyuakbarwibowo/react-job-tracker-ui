@@ -47,9 +47,7 @@ export default function Dashboard() {
 
   return (
     <div className="w-screen min-h-screen w-full bg-gray-50 py-10 flex justify-center">
-      {/* CENTER WRAPPER */}
       <div className="w-full max-w-5xl px-6">
-        {/* Header */}
         <div className="mb-6 flex items-center justify-between">
           <h1 className="text-2xl font-bold">Job Tracker</h1>
           <button
